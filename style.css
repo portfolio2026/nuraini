@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+.hero {
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.btn {
+    padding: 12px 30px;
+    margin: 10px;
+    background: #d4af37;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #d4af37;
+}
+
+.slider img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: none;
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: center;
+    background: #d4af37;
+}
+
+.mobile-nav a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.mobile-nav a:hover {
+    background: #bfa32d;
+}
